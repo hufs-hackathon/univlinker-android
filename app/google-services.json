@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "602212235846",
+    "project_id": "farmate-android",
+    "storage_bucket": "farmate-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602212235846:android:27463df77e5818b782e847",
+        "android_client_info": {
+          "package_name": "com.practice.farmate_android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "602212235846-1vbaur6s2ksv8au89iadgcea9o16nki2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBGgAq7MRFmlMpGw5fghNtRWmskSVkeeo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "602212235846-1vbaur6s2ksv8au89iadgcea9o16nki2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
