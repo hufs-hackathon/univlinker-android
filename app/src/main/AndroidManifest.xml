@@ -35,8 +35,9 @@
         </service>
 
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".ui.MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -60,6 +61,9 @@
                     android:scheme="@string/kakao_oauth_host" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".ui.DetailActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

@@ -11,6 +11,7 @@ import android.util.Log
 import androidx.core.app.NotificationCompat
 import com.google.firebase.messaging.FirebaseMessagingService
 import com.google.firebase.messaging.RemoteMessage
+import com.practice.farmate_android.ui.MainActivity
 
 class AppMessagingService: FirebaseMessagingService() {
     // [START receive_message]

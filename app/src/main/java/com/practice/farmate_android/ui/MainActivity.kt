@@ -1,9 +1,10 @@
-package com.practice.farmate_android
+package com.practice.farmate_android.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import com.kakao.sdk.common.util.Utility
+import com.practice.farmate_android.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

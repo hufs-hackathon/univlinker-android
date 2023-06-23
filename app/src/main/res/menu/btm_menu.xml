@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="홈"
+        android:icon="@drawable/ic_home_on"
+        android:id="@+id/homeFragment"
+        android:enabled="true"/>
+    <item android:title="멘토"
+        android:icon="@drawable/ic_mentor_on"
+        android:id="@+id/scheduleFragment"
+        android:enabled="true"/>
+    <item android:title="활동 찾기"
+        android:icon="@drawable/ic_search_on"
+        android:id="@+id/searchFragment"
+        android:enabled="true"/>
+    <item android:title="MY"
+        android:icon="@drawable/ic_my_on"
+        android:id="@+id/myPageFragment"
+        android:enabled="true"/>
+</menu>
