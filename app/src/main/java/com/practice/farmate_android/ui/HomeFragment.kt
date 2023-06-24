@@ -104,17 +104,17 @@ class HomeFragment : Fragment() {
                                 if (interest == "동아리") {
                                     val result = response.body()?.get(0)
 
-                                    val rvAdapter = ActivityItemsRVAdapter(requireContext(), result!!.dtoList)
+                                    val rvAdapter = ActivityItemsRVAdapter(requireContext(), result!!.dtoList, userId)
                                     binding.rvServices.adapter = rvAdapter
                                     binding.rvServices.layoutManager = LinearLayoutManager(requireContext())
                                 } else if (interest == "공모전") {
                                     val result = response.body()?.get(1)
-                                    val rvAdapter = ActivityItemsRVAdapter(requireContext(), result!!.dtoList)
+                                    val rvAdapter = ActivityItemsRVAdapter(requireContext(), result!!.dtoList, userId)
                                     binding.rvServices.adapter = rvAdapter
                                     binding.rvServices.layoutManager = LinearLayoutManager(requireContext())
                                 } else {
                                     val result = response.body()?.get(2)
-                                    val rvAdapter = ActivityItemsRVAdapter(requireContext(), result!!.dtoList)
+                                    val rvAdapter = ActivityItemsRVAdapter(requireContext(), result!!.dtoList, userId)
                                     binding.rvServices.adapter = rvAdapter
                                     binding.rvServices.layoutManager = LinearLayoutManager(requireContext())
                                 }
@@ -140,17 +140,17 @@ class HomeFragment : Fragment() {
                                 if (interest == "동아리") {
                                     val result = response.body()?.get(0)
 
-                                    val rvAdapter = ActivityItemsRVAdapter(requireContext(), result!!.dtoList)
+                                    val rvAdapter = ActivityItemsRVAdapter(requireContext(), result!!.dtoList, userId)
                                     binding.rvServices.adapter = rvAdapter
                                     binding.rvServices.layoutManager = LinearLayoutManager(requireContext())
                                 } else if (interest == "공모전") {
                                     val result = response.body()?.get(1)
-                                    val rvAdapter = ActivityItemsRVAdapter(requireContext(), result!!.dtoList)
+                                    val rvAdapter = ActivityItemsRVAdapter(requireContext(), result!!.dtoList, userId)
                                     binding.rvServices.adapter = rvAdapter
                                     binding.rvServices.layoutManager = LinearLayoutManager(requireContext())
                                 } else {
                                     val result = response.body()?.get(2)
-                                    val rvAdapter = ActivityItemsRVAdapter(requireContext(), result!!.dtoList)
+                                    val rvAdapter = ActivityItemsRVAdapter(requireContext(), result!!.dtoList, userId)
                                     binding.rvServices.adapter = rvAdapter
                                     binding.rvServices.layoutManager = LinearLayoutManager(requireContext())
                                 }
@@ -177,17 +177,17 @@ class HomeFragment : Fragment() {
                                 if (interest == "동아리") {
                                     val result = response.body()?.get(0)
 
-                                    val rvAdapter = ActivityItemsRVAdapter(requireContext(), result!!.dtoList)
+                                    val rvAdapter = ActivityItemsRVAdapter(requireContext(), result!!.dtoList, userId)
                                     binding.rvServices.adapter = rvAdapter
                                     binding.rvServices.layoutManager = LinearLayoutManager(requireContext())
                                 } else if (interest == "공모전") {
                                     val result = response.body()?.get(1)
-                                    val rvAdapter = ActivityItemsRVAdapter(requireContext(), result!!.dtoList)
+                                    val rvAdapter = ActivityItemsRVAdapter(requireContext(), result!!.dtoList, userId)
                                     binding.rvServices.adapter = rvAdapter
                                     binding.rvServices.layoutManager = LinearLayoutManager(requireContext())
                                 } else {
                                     val result = response.body()?.get(2)
-                                    val rvAdapter = ActivityItemsRVAdapter(requireContext(), result!!.dtoList)
+                                    val rvAdapter = ActivityItemsRVAdapter(requireContext(), result!!.dtoList, userId)
                                     binding.rvServices.adapter = rvAdapter
                                     binding.rvServices.layoutManager = LinearLayoutManager(requireContext())
                                 }
@@ -217,17 +217,17 @@ class HomeFragment : Fragment() {
                         if (interest == "동아리") {
                             val result = response.body()?.get(0)
 
-                            val rvAdapter = ActivityItemsRVAdapter(requireContext(), result!!.dtoList)
+                            val rvAdapter = ActivityItemsRVAdapter(requireContext(), result!!.dtoList, userId)
                             binding.rvServices.adapter = rvAdapter
                             binding.rvServices.layoutManager = LinearLayoutManager(requireContext())
                         } else if (interest == "공모전") {
                             val result = response.body()?.get(1)
-                            val rvAdapter = ActivityItemsRVAdapter(requireContext(), result!!.dtoList)
+                            val rvAdapter = ActivityItemsRVAdapter(requireContext(), result!!.dtoList, userId)
                             binding.rvServices.adapter = rvAdapter
                             binding.rvServices.layoutManager = LinearLayoutManager(requireContext())
                         } else {
                             val result = response.body()?.get(2)
-                            val rvAdapter = ActivityItemsRVAdapter(requireContext(), result!!.dtoList)
+                            val rvAdapter = ActivityItemsRVAdapter(requireContext(), result!!.dtoList, userId)
                             binding.rvServices.adapter = rvAdapter
                             binding.rvServices.layoutManager = LinearLayoutManager(requireContext())
                         }

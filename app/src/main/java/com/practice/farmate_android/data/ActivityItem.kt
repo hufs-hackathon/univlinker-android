@@ -5,3 +5,10 @@ data class ActivityItem(
     val title: String,
     val tag: String
 )
+
+data class ActivityDetail(
+    val title: String,
+    val content: String,
+    val imageUrl: String,
+    val tag: String
+)

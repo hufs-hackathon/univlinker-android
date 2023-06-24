@@ -198,6 +198,8 @@ class MentoringFragment : Fragment() {
                             binding.rvMentors.adapter = mentorItemRVAdapter
                             binding.rvMentors.layoutManager = LinearLayoutManager(requireContext())
 
+
+
                         }
 
                     }

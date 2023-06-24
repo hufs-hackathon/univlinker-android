@@ -1,17 +1,23 @@
 package com.practice.farmate_android.ui.adapter
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.practice.farmate_android.R
+import com.practice.farmate_android.RetrofitClient
+import com.practice.farmate_android.SharedPreferencesManager
 import com.practice.farmate_android.data.ActivityItem
 import com.practice.farmate_android.data.EachActivity
 import com.practice.farmate_android.databinding.ItemActivitiesBinding
+import com.practice.farmate_android.ui.DetailActivity
+import kotlinx.coroutines.NonDisposableHandle.parent
+import retrofit2.Callback
 
-class ActivityItemsRVAdapter(private val context: Context, private val itemList: List<EachActivity>)
+class ActivityItemsRVAdapter(private val context: Context, private val itemList: List<EachActivity>, private val userId: Long)
     : RecyclerView.Adapter<ActivityItemsRVAdapter.ActivityItemsViewHolder>() {
         inner class ActivityItemsViewHolder(private val binding: ItemActivitiesBinding)
             : RecyclerView.ViewHolder(binding.root){
@@ -21,6 +27,12 @@ class ActivityItemsRVAdapter(private val context: Context, private val itemList:
                         .into(binding.ivItem)
                     binding.tvActivityName.text = current.title
                     binding.tvActivityTag.text = "#${current.tag}"
+
+                    itemView.setOnClickListener {
+                        val intent = Intent(context, DetailActivity::class.java)
+                        intent.putExtra("boardId", current.boardId)
+                        context.startActivity(intent)
+                    }
                 }
 
         }

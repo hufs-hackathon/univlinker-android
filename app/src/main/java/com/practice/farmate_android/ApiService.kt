@@ -64,4 +64,9 @@ interface ApiService {
     fun getMyPage(
         @Query("userId") userId: Long
     ): Call<Mypage>
+
+    @GET("/univlinker/board")
+    fun watchActivity(
+        @Query("boardId") boardId: Long
+    ): Call<ActivityDetail>
 }
