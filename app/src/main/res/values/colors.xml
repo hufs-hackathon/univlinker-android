@@ -8,6 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="univlinker_purple">#BB54EB</color>
+    <color name="univlink_purple">#BB54EB</color>
     <color name="text_color">#FF000000</color>
     <color name="univlinker_gray">#999999</color>
     <color name="item_color">#FFFFFFFF</color>

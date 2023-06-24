@@ -4,12 +4,12 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.practice.farmate_android.R
-import com.practice.farmate_android.databinding.ActivityMentorDetailBinding
+import com.practice.farmate_android.databinding.ActivityMyServiceBinding
 
-class MentorDetailActivity: AppCompatActivity() {
-    private lateinit var binding: ActivityMentorDetailBinding
+class MyServiceActivity: AppCompatActivity() {
+    private lateinit var binding: ActivityMyServiceBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_mentor_detail)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_my_service)
     }
 }

@@ -32,15 +32,25 @@
                 app:contentInsetStart="12dp">
 
                 <TextView
-                    android:id="@+id/tv_toolbar"
+                    android:id="@+id/tv_toolbar_mento"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="멘토"
+                    android:text="멘토"
                     android:textStyle="bold"
                     android:textColor="@color/text_color"
                     android:layout_marginStart="20dp"
                     android:textSize="20sp"
                     />
+
+                <TextView
+                    android:id="@+id/tv_toolbar_mentee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="멘티"
+                    android:textStyle="bold"
+                    android:textColor="@color/univlinker_gray"
+                    android:layout_marginStart="20dp"
+                    android:textSize="20sp" />
 
             </androidx.appcompat.widget.Toolbar>
 
@@ -65,26 +75,28 @@
                     app:chipSpacingHorizontal="8dp"
                     app:singleSelection="true"
                     android:layout_marginTop="16dp"
-                    android:layout_marginStart="20dp">
+                    android:layout_marginStart="20dp"
+                    app:selectionRequired="true">
 
                     <com.google.android.material.chip.Chip
                         style="@style/Widget.MaterialComponents.Chip.Choice"
                         android:id="@+id/chip_vocation"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="🏙‍ 취업"
+                        android:text="취업"
                         android:gravity="center"
                         app:chipMinHeight="38dp"
                         app:chipStartPadding="12dp"
                         app:chipEndPadding="12dp"
-                        android:textColor="@color/text_color"/>
+                        android:textColor="@color/text_color"
+                        android:checked="true"/>
 
                     <com.google.android.material.chip.Chip
                         style="@style/Widget.MaterialComponents.Chip.Choice"
                         android:id="@+id/chip_developer"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="🧑🏻‍💻‍ 개발자"
+                        android:text="개발자"
                         app:chipMinHeight="38dp"
                         app:chipStartPadding="8dp"
                         app:chipEndPadding="8dp"
@@ -96,7 +108,7 @@
                         android:id="@+id/chip_language"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="🔤 언어"
+                        android:text="언어"
                         app:chipMinHeight="38dp"
                         app:chipStartPadding="8dp"
                         app:chipEndPadding="8dp"
@@ -116,6 +128,32 @@
 
 
         </androidx.core.widget.NestedScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btn_write_service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_add"
+                    android:background="@color/univlinker_purple"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="24dp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
 
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>

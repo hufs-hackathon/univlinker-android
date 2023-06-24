@@ -6,11 +6,7 @@
         android:enabled="true"/>
     <item android:title="멘토"
         android:icon="@drawable/ic_mentor_on"
-        android:id="@+id/scheduleFragment"
-        android:enabled="true"/>
-    <item android:title="활동 찾기"
-        android:icon="@drawable/ic_search_on"
-        android:id="@+id/searchFragment"
+        android:id="@+id/mentoringFragment"
         android:enabled="true"/>
     <item android:title="MY"
         android:icon="@drawable/ic_my_on"

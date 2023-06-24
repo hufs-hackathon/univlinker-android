@@ -8,13 +8,14 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.practice.farmate_android.R
 import com.practice.farmate_android.data.ActivityItem
+import com.practice.farmate_android.data.EachActivity
 import com.practice.farmate_android.databinding.ItemActivitiesBinding
 
-class ActivityItemsRVAdapter(private val context: Context, private val itemList: List<ActivityItem>)
+class ActivityItemsRVAdapter(private val context: Context, private val itemList: List<EachActivity>)
     : RecyclerView.Adapter<ActivityItemsRVAdapter.ActivityItemsViewHolder>() {
         inner class ActivityItemsViewHolder(private val binding: ItemActivitiesBinding)
             : RecyclerView.ViewHolder(binding.root){
-                fun bind(context: Context, current: ActivityItem) {
+                fun bind(context: Context, current: EachActivity) {
                     Glide.with(context)
                         .load(current.imageUrl)
                         .into(binding.ivItem)

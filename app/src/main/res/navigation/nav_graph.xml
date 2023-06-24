@@ -16,11 +16,6 @@
         android:label="fragment_mentoring"
         tools:layout="@layout/fragment_mentoring" />
     <fragment
-        android:id="@+id/searchFragment"
-        android:name="com.practice.farmate_android.ui.SearchFragment"
-        android:label="fragment_search"
-        tools:layout="@layout/fragment_search" />
-    <fragment
         android:id="@+id/myPageFragment"
         android:name="com.practice.farmate_android.ui.MyPageFragment"
         android:label="fragment_my_page"

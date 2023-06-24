@@ -6,6 +6,7 @@
 
     <application
         android:name=".FarmateApplication"
+        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -36,17 +37,8 @@
 
         <activity
             android:name=".ui.MainActivity"
-            android:exported="true"
             android:screenOrientation="portrait">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
         </activity>
         <activity
             android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity"
@@ -64,6 +56,30 @@
 
         <activity android:name=".ui.DetailActivity"
             android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.MentorDetailActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".ui.MenteeDetailActivity"/>
+        <activity android:name=".ui.MyScrapedActivity"/>
+        <activity android:name=".ui.MyServiceActivity"/>
+        <activity android:name=".ui.SocialLoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity android:name=".ui.WriteMenteeActivity"/>
+        <activity android:name=".ui.WriteMentorActivity"/>
+        <activity android:name=".ui.SigninInfoActivity"/>
+        <activity android:name=".ui.SigninSelectActivity"/>
     </application>
 
 </manifest>
